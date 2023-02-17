@@ -92,6 +92,7 @@ export default defineComponent({
 }
 
 .search-input {
+  display: none;
   color: $primary-text-color;
   border: none;
   padding: $small-margin $base-margin;

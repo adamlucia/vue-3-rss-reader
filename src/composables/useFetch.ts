@@ -14,7 +14,7 @@ async function doFetch(url: string, options?: RequestInit) {
 export function useFetch(url: Ref<string>): Ref<ResponseState> {
   const response = ref<ResponseState>(null);
 
-  watch(url, async (newUrl, _, onInvalidate) => {
+  watch(url, async (newUrl: string, _: any, onInvalidate: any) => {
     const controller = new AbortController();
     let didCancel = false;
     onInvalidate(() => {
@@ -27,14 +27,14 @@ export function useFetch(url: Ref<string>): Ref<ResponseState> {
       const result = await doFetch(newUrl, { signal: controller.signal });
       if (didCancel) return;
       response.value = result;
-    } catch (e) {
+    } catch (e: any) {
       response.value = { error: e.message };
     }
   });
   onMounted(async () => {
     try {
       response.value = await doFetch(url.value);
-    } catch (e) {
+    } catch (e: any) {
       response.value = { error: e.message };
     }
   });

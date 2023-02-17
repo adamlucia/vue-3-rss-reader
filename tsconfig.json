@@ -10,7 +10,8 @@
     "jsx": "preserve",
     "moduleResolution": "node",
     "noEmit": true,
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "preserveSymlinks": false // no more errors ✅ - https://stackoverflow.com/a/73637904/8298530
   },
   "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"],
   "exclude": ["node_modules"]

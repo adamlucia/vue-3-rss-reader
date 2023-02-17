@@ -15,6 +15,7 @@
 
 <script lang="ts">
 import { defineComponent, ref } from "vue";
+
 import FeedSearch from "./components/FeedSearch.vue";
 import SortableList from "./components/SortableList.vue";
 
@@ -48,7 +49,8 @@ body {
 }
 
 header {
-  display: flex;
+  // display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-between;
   padding: $base-margin;

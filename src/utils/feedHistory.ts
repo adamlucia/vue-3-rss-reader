@@ -1,4 +1,6 @@
-const DEFAULT_VALUE = [{ title: "Wait But Why", url: "http://waitbutwhy.com/feed" }];
+const DEFAULT_VALUE = [
+  { title: "The Squizz Blog", url: "https://squizzdigitalsignage.com/blog/atom.xml" },
+];
 
 export function getHistory(): FeedInfo[] {
   try {
