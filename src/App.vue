@@ -45,7 +45,6 @@ body {
   font-size: 16px;
   line-height: 1.15;
   margin: 0;
-  color: $primary-text-color;
 }
 
 header {
@@ -60,6 +59,8 @@ header {
 
 main {
   margin: $base-margin;
+  padding: $base-padding;
+  background-color: white;
 }
 
 h1 {
@@ -88,6 +89,7 @@ button,
   color: $brand-text-color;
   border-radius: 2px;
   border: 0;
+  color: white;
 
   &:hover,
   &:focus {

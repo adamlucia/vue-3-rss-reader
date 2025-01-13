@@ -70,6 +70,14 @@ export default defineComponent({
   height: 100%;
   background: $shadow-color;
   position: absolute;
+
+  // @media only screen and ($md-and-up) {
+  //   max-width: 50%;
+  // }
+
+  // @media only screen and ($lg-and-up) {
+  //   max-width: 25%;
+  // }
 }
 
 .modal__close {
@@ -97,15 +105,18 @@ export default defineComponent({
   padding: $base-margin;
   border: 0;
   margin: 0;
+  max-width: 992px;
 
   .modal__header {
     margin-top: 0;
     margin-bottom: $base-margin;
     padding-right: $large-margin;
+    color: $primary-text-color !important;
   }
 
   .modal__action {
     margin-bottom: $base-margin;
+    color: white;
   }
 
   img {
@@ -113,5 +124,9 @@ export default defineComponent({
     display: block;
     margin: 0 auto;
   }
+}
+
+img {
+  max-width: 100%;
 }
 </style>

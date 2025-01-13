@@ -47,6 +47,7 @@ export default defineComponent({
 
     const sorting = ref<SortingState>({ field: "pubDate", dir: "asc" });
     const sortedFeed = computed<FeedItem[]>(() => {
+      console.log("sortedFeed computed", props.feed);
       const _feed = props.feed.slice(0);
       const multiplier = sorting.value.dir === "asc" ? 1 : -1;
       if (sorting.value.field === "title") {
@@ -86,6 +87,7 @@ export default defineComponent({
 
 .feed__header-button {
   margin-left: $small-margin;
+  color: white;
 }
 
 .feed__list {

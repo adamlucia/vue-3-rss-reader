@@ -1,5 +1,6 @@
 $small-margin: 0.5rem;
 $base-margin: 1rem;
+$base-padding: 1rem;
 $large-margin: 1.5rem;
 
 $small-font-size: 0.75rem;
@@ -7,9 +8,15 @@ $medium-font-size: 1rem;
 $large-font-size: 2rem;
 
 $primary-color: #fff;
-$brand-color: #1976d2;
-$primary-text-color: rgba(0, 0, 0, 0.9);
-$brand-text-color: #fff;
+$brand-color: #75be4c;
+$primary-text-color: rgba(0, 0, 0, 0.8);
+$brand-text-color: #000000;
 $shadow-color: rgba(0, 0, 0, 0.5);
 $active-color: rgba(0, 0, 0, 0.1);
 $invalid-color: #d32f2f;
+
+$xl-and-up: "only screen and (min-width: 1200px)";
+$lg-and-up: "only screen and (min-width: 992px)";
+$md-and-up: "only screen and (min-width: 768px)";
+$sm-and-up: "only screen and (min-width: 576px)";
+
