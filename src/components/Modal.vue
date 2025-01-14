@@ -119,14 +119,11 @@ export default defineComponent({
     color: white;
   }
 
-  img {
+  :deep(p),
+  :deep(img) {
     max-width: 100%;
     display: block;
     margin: 0 auto;
   }
-}
-
-img {
-  max-width: 100%;
 }
 </style>

@@ -7,7 +7,7 @@
     @keypress.self.enter.space.prevent="$emit('click')"
   >
     <div class="feed__item-title">{{ item.title }}</div>
-    <span class="feed__item-date">{{ item.pubDate }}</span>
+    <!-- <span class="feed__item-date">{{ !-- item.pubDate -- }}</span> -->
     <p class="feed__item-description">{{ firstParagraph }}</p>
   </li>
 </template>
