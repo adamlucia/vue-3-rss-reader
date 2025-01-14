@@ -123,7 +123,17 @@ export default defineComponent({
   :deep(img) {
     max-width: 100%;
     display: block;
-    margin: 0 auto;
+    margin: 1em auto;
+  }
+  :deep(ul),
+  :deep(ol) {
+    padding-left: 1em;
+  }
+
+  :deep(h1),
+  :deep(h2) {
+    color: black !important;
+    margin-top: 1em !important;
   }
 }
 </style>
