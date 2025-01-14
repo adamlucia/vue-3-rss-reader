@@ -30,7 +30,7 @@ export default defineComponent({
       if (!div.firstElementChild) {
         return this.item.description;
       }
-      return div.innerText.substring(0, 300);
+      return div.innerText.substring(0, 350) + "...";
     },
   },
 });
